@@ -1,10 +1,8 @@
+server:
+  port: 8888
 spring:
   application:
-    name: greeting-service
-
-server:
-  port: 8080
-
-greeting-service:
-  greeting: "Olá"
-  default-value: "Mundo"
+    name: config-server
+  profiles:
+    active:
+      - native
